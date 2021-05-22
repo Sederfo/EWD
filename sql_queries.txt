@@ -1,0 +1,34 @@
+create table products.`products` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(255) NOT NULL,
+    `brand` varchar(255) NOT NULL,
+    `description` varchar(255) NOT NULL,
+    `price` int(11) NOT NULL,
+    `image_url` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+
+create table products.`users` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `username` varchar(255) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (4).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (3).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (2).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (1).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod.jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (4).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (3).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (2).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (1).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod.jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (4).jpg');
+INSERT INTO `products`(`name`, `brand`, `description`, `price`, `image_url`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','hmgoepprod (3).jpg');
+
+
+INSERT INTO `users`(`username`, `password`) VALUES ('user','password');
