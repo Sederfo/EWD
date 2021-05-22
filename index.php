@@ -123,10 +123,10 @@
         <div id='productDetailsModal". $row["id"] ."' class='modal'>
           <div class='modal-content'>
             <span class='close' onClick='closeProductDetailsModal(".$row["id"].")'>&times;</span><br>
-              <p> Name: ".$row["name"] ."</p>
-              <p> Brand: ".$row["brand"] ."</p>
-              <p> Description: ".$row["description"] ."</p>
-              <p> Price: ".$row["price"] ."</p>
+              <p> <b>Name</b>: ".$row["name"] ."</p>
+              <p> <b>Brand</b>: ".$row["brand"] ."</p>
+              <p> <b>Description</b>: ".$row["description"] ."</p>
+              <p> <b>Price</b>: ".$row["price"] ."</p>
            </div>
         </div>
         
