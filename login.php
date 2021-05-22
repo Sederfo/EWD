@@ -1,5 +1,7 @@
 <?php
 session_start();
+session_unset();
+
 include "db_conn.php";
 include "utilities.php"; ?>
 

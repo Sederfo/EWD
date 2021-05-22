@@ -3,6 +3,9 @@
   include "db_conn.php";
   include "utilities.php"; 
 
+  if (!isset($_SESSION["username"]) || !isset($_SESSION["password"])){
+    header("Location: login.php");
+  }
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +52,7 @@
       <a onClick="openAddProductModal()" href="#">Add Product</a>
       <a href="#" onClick="openEditMode()">Edit Product</a>
       <a onClick="openDeleteMode()" href="#">Delete Product</a>
+      <a href="logout.php">Log out</a>
     </div>
 
    
@@ -70,7 +74,7 @@
 
           <label for="price">Price:</label>
           <input type="text" id="price" name="price" required/>
-          <label for="image_url">Image URL (in images folder):</label>
+          <label for="image_url">Image URL (with extension):</label>
           <input type="text" id="image_url" name="image_url" required/>
 
           <button type="submit">Add Product</button>
@@ -130,7 +134,7 @@
               <label for='price'>Price:</label>
               <input type='text' id='price' name='price' required value=". $row["price"] .">
 
-              <label for='image_url'>Image URL (in images folder):</label>
+              <label for='image_url'>Image URL (with extension):</label>
               <input type='text' id='image_url' name='image_url' required value=". $row["image_url"] .">
 
               <input type='hidden' id='id' name='id' value=".$row["id"].">
