@@ -1,7 +1,14 @@
 <?php
 session_start();
 include "db_conn.php";
-include "utilities.php";
+
+function validate($data){
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
 if(isset($_POST['uname']) && isset($_POST['password'])) {
 
   $uname = validate($_POST['uname']);

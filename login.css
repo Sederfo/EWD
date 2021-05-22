@@ -25,10 +25,10 @@ body {
 input {
   display: block;
   border: 2px solid #ccc;
+  border-radius: 5px;
   width: 95%;
   padding: 10px;
   margin: 10px auto;
-  border-radius: 5px;
 }
 
 select {
@@ -50,9 +50,9 @@ button {
   margin-left: 40%;
   margin-right: 30%;
   background: #555;
+  border-radius: 5px;
   padding: 10px 15px;
   color: #fff;
-  border-radius: 5px;
   text-align: center;
   border: none;
 }

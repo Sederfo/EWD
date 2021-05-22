@@ -2,8 +2,7 @@
 session_start();
 session_unset();
 
-include "db_conn.php";
-include "utilities.php"; ?>
+include "db_conn.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +13,6 @@ include "utilities.php"; ?>
     <title>Portofolio</title>
 
     <link rel="stylesheet" href="login.css"/>
-
-    <script defer src="index.js">
-      window.glob = "editMode";
-      window.glob = "deleteMode";
-    </script>
-    <script defer src="modal.js"></script>
   </head>
 
   <body>

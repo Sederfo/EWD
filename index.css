@@ -29,10 +29,12 @@ body {
   margin: 30px;
   height: 200px;
   width: 200px;
+  transition: 0.3s;
 }
 
 .product:hover {
   opacity: 0.6;
+  transition: 0.3s;
 }
 
 .product img {
@@ -47,17 +49,25 @@ form {
   align-items: center;
 }
 
-form button {
+button {
   padding: 10px;
   margin: 10px;
+  background: #555;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #fff;
+  text-align: center;
+  border: none;
 }
 
-form label {
+label {
   padding: 2px;
   margin: 2px;
 }
 
-form input {
+input {
   padding: 2px;
   margin: 2px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
 }
