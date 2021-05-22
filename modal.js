@@ -4,6 +4,16 @@ function openEditModal() {
   }
 }
 
+function openLogOutModal() {
+  var logOutModal = document.getElementById("logOutModal");
+  logOutModal.style.display = "block";
+}
+
+function closeLogOutModal() {
+  var logOutModal = document.getElementById("logOutModal");
+  logOutModal.style.display = "none";
+}
+
 //called onClick on any product image, redirects to different modals based on edit mode and delete mode
 function openProductModal(clicked_id) {
   if (top.editMode) {
@@ -56,6 +66,7 @@ function closeDeleteProductModal(clicked_id) {
   var deleteProductModal = document.getElementById(
     "deleteProductModal" + clicked_id
   );
+  console.log("deleteProductModal" + clicked_id);
   deleteProductModal.style.display = "none";
 }
 

@@ -20,6 +20,6 @@ if($sql->execute() === true){
         </script>";
 }
 
-//header("Location: index.php");
+header("Location: index.php");
 
 ?>

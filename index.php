@@ -52,9 +52,21 @@
       <a onClick="openAddProductModal()" href="#">Add Product</a>
       <a href="#" onClick="openEditMode()">Edit Product</a>
       <a onClick="openDeleteMode()" href="#">Delete Product</a>
-      <a href="logout.php">Log out</a>
+      <a onClick="openLogOutModal()">Log out</a>
     </div>
 
+    <div id="logOutModal" class="modal">
+      <div class="modal-content">
+        <div style="display: flex; flex-direction:column; justify-content: space-around;">
+          <p>Are you sure you want to log out?</p>
+          <form action="logout.php" method="post" style="min-height:auto;">
+            <button type="submit">Yes</button>
+            <button type="button" onClick="closeLogOutModal()" >No</button>
+          </form>
+         
+        </div>
+      </div>
+    </div>
    
 
   
@@ -155,7 +167,7 @@
                 <input id='id' name='id' type='hidden' value=". $row["id"].">
                 <button type='submit'> Yes </button>
               
-                <button onClick='closeDeleteProductModal()'> No </button>
+                <button type='button' onClick='closeDeleteProductModal(".$row["id"].")'> No </button>
               </form>
             </div>
             
